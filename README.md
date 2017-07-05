@@ -10,7 +10,7 @@ Fullscreen modal provides more native user experience on mobile phones, here is 
 
 Fullscreen modal does not affect modals in desktop browsers, and applies these styles only on mobile devices.
 
-You can test in on live demo page here - https://keaukraine.github.io/bootstrap-fs-modal/
+Live demo page is here - https://keaukraine.github.io/bootstrap-fs-modal/
 
 ## How to Use
 
