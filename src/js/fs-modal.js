@@ -1,9 +1,9 @@
 $(function() {
     var idCounter = 0;
 
-    $('.modal.modal-fullscreen').on('show.bs.modal', function() {
+    $('body').on('show.bs.modal', '.modal.modal-fullscreen', function() {
         var $this = $(this),
-            $buttons = $(this).find('.modal-footer [data-icon]');
+            $buttons = $(this).find('.modal-footer [data-glyphicon]');
 
         $this.find('.modal-header .pull-right, .modal-header [data-additional-close]').remove();
 
@@ -12,7 +12,7 @@ $(function() {
 
         $.each($buttons, function() {
             var key = idCounter++,
-                dataIcon = $(this).data('icon');
+                dataIcon = $(this).data('glyphicon');
 
             $(this).attr('data-button-tag', key);
 

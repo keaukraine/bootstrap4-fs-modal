@@ -16,7 +16,6 @@ module.exports = function(grunt) {
         },
         uglify: {
             my_target: {
-                options: {mangle: false},
                 files: {
                     'dist/js/fs-modal.min.js': ['src/js/fs-modal.js'],
                 },
