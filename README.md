@@ -15,7 +15,14 @@ You can test in on live demo page here - https://keaukraine.github.io/bootstrap-
 
 ## How to Use
 
-First, include CSS and JS from `dist` folder.
+First, include CSS and JS from `dist` folder:
+
+```html
+<link href="dist/css/fs-modal.min.css" rel="stylesheet">
+...
+<script src="dist/js/fs-modal.min.js"></script>
+```
+
 The only modification to HTML layout is for buttons to appear in header of mobile fullscreen modal, you have to specify icon which will be used for button. This is a name of glyphicon provided using `data-glyphicon` attribute. No need to specify this attribute for *Close* button, it will be automatically added to the left of header.
 
 Example:
