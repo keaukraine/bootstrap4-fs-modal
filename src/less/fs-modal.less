@@ -1,13 +1,11 @@
 @import "../../node_modules/bootstrap/less/variables.less";
 @import "../../node_modules/bootstrap/less/mixins.less";
 
-@modal-fullscreen-mobile-header-height: 50px;
-@modal-fullscreen-mobile-content-padding: 7px;
-@modal-fullscreen-mobile-header-background: #f8f8f8;
+@import "variables.less";
 
 @media(max-width: @screen-md-min) {
     .modal.modal-fullscreen {
-        box-shadow: 0px 0px 0px 100px rgba(255, 255, 255, 1);
+        box-shadow: 0px 0px 0px 100px rgba(255, 255, 255, 1); // thick shadow to hide content during mobile Safari overscroll
         .modal-dialog {
             margin: 0;
             width: 100%;
@@ -32,7 +30,7 @@
                     padding: 0;
                     line-height: @modal-fullscreen-mobile-header-height;
                     background-color: @modal-fullscreen-mobile-header-background;
-                    border-color: #e7e7e7;
+                    border-color: @modal-fullscreen-mobile-header-border-color;
                     .modal-title {
                         display: inline-block;
                         line-height: @modal-fullscreen-mobile-header-height;
@@ -41,7 +39,7 @@
                     .btn {
                         vertical-align: top;
                         .glyphicon {
-                            font-size: 22px;
+                            font-size: @modal-fullscreen-mobile-header-font-size;
                         }
                     }
                     .close {
