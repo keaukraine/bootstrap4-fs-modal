@@ -1,5 +1,5 @@
 # Bootstrap Mobile FullScreen Modal
-Script to make Bootstrap modals look more natively on mobile phones.
+A simple way to improve UX of Bootstrap modals on mobile phones.
 
 Regular Bootstrap modals (with a lot of content) on mobile devices can cause additional scrolling to get to the bottom buttons of modal.
 
