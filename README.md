@@ -1,10 +1,38 @@
 # Bootstrap Mobile FullScreen Modal
+Script to make Bootstrap modals look more natively on mobile phones.
+
+Regular Bootstrap modals (with a lot of content) look on mobile devices like this:
+
+![Regular Bootstrap Modal on Phone](http://i.imgur.com/Calp2Rb.gif)
+
+Fullscreen modal provides more native user experience on mobile phones:
+
+![Fullscreen Bootstrap Modal on Phone](http://i.imgur.com/uIWVS1Q.gif)
+
+Fullscreen modal does not affect modals in desktop browsers, and applies these styles only on mobile devices.
+
+## How to Use
+
+First, include CSS and JS from `dist` folder.
+The only modification to HTML layout is for buttons to appear in header of mobile fullscreen modal, you have to specify icon which will be used for button. This is a name of glyphicon provided using `data-glyphicon` attribute. No need to specify this attribute for *Close* button, it will be automatically added to the left of header.
+
+Example:
+
+```html
+<div class="modal-footer">
+  <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+  <button type="button" class="btn btn-default" data-glyphicon="glyphicon-refresh">Reload Data</button>
+  <button type="button" class="btn btn-default btn-primary" data-glyphicon="glyphicon-ok">Save</button>
+</div>
+
+```
+
+That's all you need. JS automatically tracks `show.bs.modal` events and duplicates all buttons with `data-glyphicon` attribute to modal header, wiring `click` events to original buttons.
 
 
 ## Used Libraries
 * Twitter Bootstrap used under the MIT License https://github.com/twbs/bootstrap/blob/master/LICENSE
 * jQuery used under the MIT license https://jquery.org/license/
-
 
 
 ## License
