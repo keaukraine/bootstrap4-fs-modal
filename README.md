@@ -8,7 +8,7 @@ Fullscreen modal provides more native user experience on mobile phones, here is 
 ![Regular Bootstrap Modal on Phone](http://i.imgur.com/Calp2Rb.gif)
 ![Fullscreen Bootstrap Modal on Phone](http://i.imgur.com/uIWVS1Q.gif)
 
-Fullscreen modal does not affect modals in desktop browsers, and applies these styles only on mobile devices.
+Fullscreen modal does not affect modals in large viewports, and applies these styles only on mobile devices.
 
 Live demo page is here - https://keaukraine.github.io/bootstrap-fs-modal/
 
