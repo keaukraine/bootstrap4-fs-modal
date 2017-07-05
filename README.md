@@ -3,7 +3,7 @@ A simple way to improve UX of Bootstrap modals on mobile phones.
 
 Regular Bootstrap modals (with a lot of content) on mobile devices can cause additional scrolling to get to the bottom buttons of modal.
 
-Fullscreen modal provides more native user experience on mobile phones:
+Fullscreen modal provides more native user experience on mobile phones, here is side-by-side comparison of regular and fullscreen modals:
 
 ![Regular Bootstrap Modal on Phone](http://i.imgur.com/Calp2Rb.gif)
 ![Fullscreen Bootstrap Modal on Phone](http://i.imgur.com/uIWVS1Q.gif)
