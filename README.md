@@ -1,17 +1,16 @@
 # Bootstrap Mobile FullScreen Modal
-Script to make Bootstrap modals look more natively on mobile phones.
+A simple way to improve UX of Bootstrap modals on mobile phones.
 
-Regular Bootstrap modals (with a lot of content) look on mobile devices like this:
+Regular Bootstrap modals (with a lot of content) on mobile devices can cause additional scrolling to get to the bottom buttons of modal.
+
+Fullscreen modal provides more native user experience on mobile phones, here is side-by-side comparison of regular and fullscreen modals:
 
 ![Regular Bootstrap Modal on Phone](http://i.imgur.com/Calp2Rb.gif)
-
-Fullscreen modal provides more native user experience on mobile phones:
-
 ![Fullscreen Bootstrap Modal on Phone](http://i.imgur.com/uIWVS1Q.gif)
 
 Fullscreen modal does not affect modals in desktop browsers, and applies these styles only on mobile devices.
 
-You can test in on live demo page here - https://keaukraine.github.io/bootstrap-fs-modal/
+Live demo page is here - https://keaukraine.github.io/bootstrap-fs-modal/
 
 ## How to Use
 
