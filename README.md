@@ -14,6 +14,8 @@ Live demo page is here - https://keaukraine.github.io/bootstrap-fs-modal/
 
 ## How to Use
 
+You can obtain plugin either from GitHub or from npm, package name is `bootstrap-fs-modal`.
+
 First, include CSS and JS from `dist` folder:
 
 ```html
