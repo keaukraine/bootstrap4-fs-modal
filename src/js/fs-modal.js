@@ -4,7 +4,7 @@ $(function() {
     $('body').on('show.bs.modal', '.modal.modal-fullscreen', function() {
         var $this = $(this),
             $buttons = $(this).find('.modal-footer [data-glyphicon]'),
-            urlReplace, popstateEvent;
+            popstateEvent;
 
         $this.find('.modal-header .pull-right, .modal-header [data-additional-close]').remove();
 
@@ -33,8 +33,7 @@ $(function() {
         $('<i class="glyphicon glyphicon-chevron-left">')
             .prependTo($this.find('.modal-header button:first'));
 
-        urlReplace = '#fsmodal' + ++idCounter;
-        history.pushState(null, null, urlReplace);
+        history.pushState(null, null, null);
 
         popstateEvent = function() {
             $this.data('hidden-by-back', true);
