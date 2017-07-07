@@ -3,7 +3,8 @@ $(function() {
 
     $('body').on('show.bs.modal', '.modal.modal-fullscreen', function() {
         var $this = $(this),
-            $buttons = $(this).find('.modal-footer [data-glyphicon]');
+            $buttons = $(this).find('.modal-footer [data-glyphicon]'),
+            urlReplace, popstateEvent;
 
         $this.find('.modal-header .pull-right, .modal-header [data-additional-close]').remove();
 
@@ -31,6 +32,24 @@ $(function() {
 
         $('<i class="glyphicon glyphicon-chevron-left">')
             .prependTo($this.find('.modal-header button:first'));
+
+        urlReplace = '#fsmodal' + ++idCounter;
+        history.pushState(null, null, urlReplace);
+
+        popstateEvent = function() {
+            $this.data('hidden-by-back', true);
+            $this.modal('hide');
+        };
+
+        $(window).one('popstate.fs-modal', popstateEvent);
+
+        $this.one('hide.bs.modal', function() {
+            $(window).off('.fs-modal', popstateEvent);
+            if (!$this.data('hidden-by-back')) {
+                history.back();
+            }
+            $this.data('hidden-by-back', null);
+        });
     });
 
     $('body').on('click', '.modal-header .fullscreen-buttons .btn-link', function(e) {

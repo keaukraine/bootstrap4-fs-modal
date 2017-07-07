@@ -124,6 +124,7 @@
     $(function() {
         $('#btnTestSaveSmall, #btnTestSaveLarge').on('click', function() {
             alert('Clicked save button #' + this.id);
+            $(this).parents('.modal').modal('hide');
         });
         $('#btnTestRefreshSmall').on('click', function() {
             alert('Clicked refresh button #' + this.id);
