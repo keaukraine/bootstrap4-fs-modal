@@ -24,11 +24,14 @@ First, include CSS and JS from `dist` folder:
 <script src="dist/js/fs-modal.min.js"></script>
 ```
 
-The only modification to HTML layout is for buttons to appear in header of mobile fullscreen modal, you have to specify icon which will be used for button. This is a name of glyphicon provided using `data-glyphicon` attribute. No need to specify this attribute for *Close* button, it will be automatically added to the left of header.
+Then, you have to add CSS class `modal-fullscreen` to modals which you want to work full-screen.
+Another little modification of HTML layout is for buttons to appear in header of mobile fullscreen modal, you have to specify icon which will be used for button. This is a name of glyphicon provided using `data-glyphicon` attribute for buttons in modal footer. No need to specify this attribute for *Close* button, it will be automatically added to the left of header.
 
 Example:
 
 ```html
+<div class="modal fade modal-fullscreen" id="modal" tabindex="-1" role="dialog" aria-labelledby="modalLabel">
+...
 <div class="modal-footer">
   <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
   <button type="button" class="btn btn-default" data-glyphicon="glyphicon-refresh">Reload Data</button>
