@@ -37,6 +37,7 @@
   }
   .modal.modal-fullscreen .modal-dialog .modal-content .modal-header .btn {
     vertical-align: top;
+    height: 50px;
   }
   .modal.modal-fullscreen .modal-dialog .modal-content .modal-header .btn .glyphicon {
     font-size: 22px;

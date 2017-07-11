@@ -3,7 +3,7 @@ $(function() {
 
     $('body').on('show.bs.modal', '.modal.modal-fullscreen', function() {
         var $this = $(this),
-            $buttons = $(this).find('.modal-footer [data-glyphicon]'),
+            $buttons = $this.find('.modal-footer .btn:not([data-dismiss="modal"])'),
             popstateEvent;
 
         $this.find('.modal-header .pull-right, .modal-header [data-additional-close]').remove();
@@ -13,18 +13,29 @@ $(function() {
 
         $.each($buttons, function() {
             var key = idCounter++,
-                dataIcon = $(this).data('glyphicon');
+                $button = $(this),
+                dataIcon = $button.data('glyphicon'),
+                dataMobileText = $button.data('mobileText'),
+                text = dataMobileText || $button.text(),
+                $newButton;
 
             $(this).attr('data-button-tag', key);
 
-            $('<button>')
-                .addClass('btn btn-link btn-lg')
-                .attr('type', 'button')
+            if (dataIcon) {
+                $newButton = $('<button>')
+                    .attr('title', text);
+                $('<i>')
+                    .addClass('glyphicon ' + dataIcon)
+                    .appendTo($newButton);
+            } else {
+                $newButton = $('<button>')
+                    .text(text);
+            }
+
+            $newButton
+                .addClass('btn btn-link')
                 .attr('data-button-tag', key)
                 .appendTo($this.find('.modal-header .fullscreen-buttons:last'));
-            $('<i>')
-                .addClass('glyphicon ' + dataIcon)
-                .prependTo($this.find('.fullscreen-buttons button:last'));
         });
 
         $('<button class="btn btn-link btn-lg" type="button" data-dismiss="modal" aria-label="Close" data-additional-close>')
