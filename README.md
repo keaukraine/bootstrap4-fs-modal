@@ -25,7 +25,8 @@ First, include CSS and JS from `dist` folder:
 ```
 
 Then, you have to add CSS class `modal-fullscreen` to modals which you want to work full-screen.
-Another little modification of HTML layout is for buttons to appear in header of mobile fullscreen modal, you have to specify icon which will be used for button. This is a name of glyphicon provided using `data-glyphicon` attribute for buttons in modal footer. No need to specify this attribute for *Close* button, it will be automatically added to the left of header.
+
+For buttons to appear as icons, you will need to make a liitle modification of HTML. Plugin processes all buttons in footer except the ones with `data-dismiss="modal"` attribute (close button, which will be always added automatically), and adds them with or without icon depending on presence of `data-glyphicon` attribute. If this attribute is set, it will add button with glyphicon provided in this attribute. If `data-glyphicon` is not set or empty, it will place text button instead. Plugin will try to apply short text by looking for short button text in `data-mobile-text` attribute and falling back to button text if attribute is not set.
 
 Example:
 
@@ -33,9 +34,11 @@ Example:
 <div class="modal fade modal-fullscreen" id="modal" tabindex="-1" role="dialog" aria-labelledby="modalLabel">
 ...
 <div class="modal-footer">
-  <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
-  <button type="button" class="btn btn-default" data-glyphicon="glyphicon-refresh">Reload Data</button>
-  <button type="button" class="btn btn-default btn-primary" data-glyphicon="glyphicon-ok">Save</button>
+  <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button> <!-- will be skipped -->
+  <button type="button" class="btn btn-default" data-glyphicon="glyphicon-refresh">Reload Data</button> <!-- icon button -->
+  <button type="button" class="btn btn-default btn-primary" data-glyphicon="glyphicon-ok">Save</button> <!-- icon button -->
+  <button type="button" id="btnTestRefreshTextButtons" class="btn btn-default" data-mobile-text="Reload">Reload Data</button> <!-- text button with short text -->
+  <button type="button" id="btnTestSaveTextButtons" class="btn btn-default btn-primary">Save</button> <!-- text button with default text -->
 </div>
 
 ```
