@@ -23,7 +23,9 @@ $(function() {
 
             if (dataIcon) {
                 $newButton = $('<button>')
-                    .attr('title', text);
+                    .attr('title', text)
+                    .attr('data-toggle', 'tooltip')
+                    .attr('data-placement', 'bottom');
                 $('<i>')
                     .addClass('glyphicon ' + dataIcon)
                     .appendTo($newButton);
@@ -36,6 +38,7 @@ $(function() {
                 .addClass('btn btn-link')
                 .attr('data-button-tag', key)
                 .appendTo($this.find('.modal-header .fullscreen-buttons:last'));
+            dataIcon && $newButton.tooltip();
         });
 
         $('<button class="btn btn-link btn-lg" type="button" data-dismiss="modal" aria-label="Close" data-additional-close>')
