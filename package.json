@@ -1,8 +1,12 @@
 {
   "name": "bootstrap-fs-modal",
-  "version": "0.3.1",
+  "version": "0.3.2",
   "license": "MIT",
   "description": "A simple way to improve Bootstrap modals UX on mobile phones",
+  "author": {
+    "name": "Oleksandr Popov",
+    "url": "github.com/keaukraine/"
+  },
   "repository" :
   {
     "type" : "git",
@@ -15,5 +19,15 @@
     "grunt-contrib-cssmin": "^2.2.0",
     "grunt-contrib-less": "^1.4.1",
     "grunt-contrib-uglify": "^3.0.1"
-  }
+  },
+  "keywords": [
+    "twitter",
+    "bootstrap",
+    "modal",
+    "responsive",
+    "mobile",
+    "javascript",
+    "jquery",
+    "jquery-plugin"
+  ]
 }
