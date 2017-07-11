@@ -26,7 +26,7 @@ First, include CSS and JS from `dist` folder:
 
 Then, you have to add CSS class `modal-fullscreen` to modals which you want to work full-screen.
 
-For buttons to appear as icons, you will need to make a liitle modification of HTML. Plugin processes all buttons in footer except the ones with `data-dismiss="modal"` attribute (close button, which will be always added automatically), and adds them with or without icon depending on presence of `data-glyphicon` attribute. If this attribute is set, it will add button with glyphicon provided in this attribute. If `data-glyphicon` is not set or empty, it will place text button instead. Plugin will try to apply short text by looking for short button text in `data-mobile-text` attribute and falling back to button text if attribute is not set.
+For buttons to appear as icons, you will need to make a little modification of HTML. Plugin processes all buttons in footer except the ones with `data-dismiss="modal"` attribute (close button, which will be always added automatically), and adds them with or without icon depending on presence of `data-glyphicon` attribute. If this attribute is set, it will add button with glyphicon provided in this attribute. If `data-glyphicon` is not set or empty, it will place text button instead. Plugin will try to apply short text by looking for short button text in `data-mobile-text` attribute and falling back to button text if attribute is not set.
 
 Example:
 
@@ -43,7 +43,7 @@ Example:
 
 ```
 
-That's all you need. JS automatically tracks `show.bs.modal` events and duplicates all buttons with `data-glyphicon` attribute to modal header, wiring `click` events to original buttons.
+That's all you need. JS automatically tracks `show.bs.modal` events and duplicates all buttons to modal header, wiring `click` events to original buttons.
 
 
 ## Used Libraries
