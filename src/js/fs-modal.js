@@ -14,21 +14,22 @@ $(function() {
         $.each($buttons, function() {
             var key = idCounter++,
                 $button = $(this),
-                dataIcon = $button.data('glyphicon'),
+                dataGlyphIcon = $button.data('glyphicon'),
+                dataFAIcon = $button.data('faicon'),
                 dataMobileText = $button.data('mobileText'),
                 text = dataMobileText || $button.text(),
                 $newButton;
 
             $(this).attr('data-button-tag', key);
 
-            if (dataIcon) {
+            if (dataGlyphIcon || dataFAIcon) {
                 $newButton = $('<button>')
                     .attr('title', text)
                     .attr('data-toggle', 'tooltip')
                     .attr('data-placement', 'bottom');
-                $('<i>')
-                    .addClass('glyphicon ' + dataIcon)
-                    .appendTo($newButton);
+
+                dataGlyphIcon && $('<i class="glyphicon ' + dataGlyphIcon + '">').appendTo($newButton);
+                dataFAIcon && $('<i class="fa fa-2x ' + dataFAIcon + '">').appendTo($newButton);
             } else {
                 $newButton = $('<button>')
                     .text(text);
@@ -38,7 +39,8 @@ $(function() {
                 .addClass('btn btn-link')
                 .attr('data-button-tag', key)
                 .appendTo($this.find('.modal-header .fullscreen-buttons:last'));
-            dataIcon && $newButton.tooltip();
+
+            (dataGlyphIcon || dataFAIcon) && $newButton.tooltip();
         });
 
         $('<button class="btn btn-link btn-lg" type="button" data-dismiss="modal" aria-label="Close" data-additional-close>')

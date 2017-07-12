@@ -8,30 +8,38 @@
     <title>Fullscreen Mobile Modal Test Page</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     <link href="dist/css/fs-modal.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
 </head>
 
 <body>
     <div class="container">
         <h1>Fullscreen Mobile Modal Test Page</h1>
         <div class="row">
-            <div class="col-md-4">
+            <div class="col-md-3">
                 <p>
                     <button type="button" class="btn btn-block btn-primary btn-lg" data-toggle="modal" data-target="#modalLarge">
                         Large Demo Modal
                     </button>
                 </p>
             </div>
-            <div class="col-md-4">
+            <div class="col-md-3">
                 <p>
                     <button type="button" class="btn btn-block btn-primary btn-lg" data-toggle="modal" data-target="#modalSmall">
                         Small Demo Modal
                     </button>
                 </p>
             </div>
-            <div class="col-md-4">
+            <div class="col-md-3">
                 <p>
                     <button type="button" class="btn btn-block btn-primary btn-lg" data-toggle="modal" data-target="#modalTextButtons">
-                        Modal With Text Buttons
+                        Text Buttons
+                    </button>
+                </p>
+            </div>
+            <div class="col-md-3">
+                <p>
+                    <button type="button" class="btn btn-block btn-primary btn-lg" data-toggle="modal" data-target="#modalFAButtons">
+                        Font Awesome Buttons
                     </button>
                 </p>
             </div>
@@ -41,33 +49,37 @@
             Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sed dui tempor, finibus ligula vitae, convallis mi. Sed posuere at neque nec hendrerit. Sed vitae felis gravida, ultricies dui eget, venenatis leo. Nunc hendrerit tellus non velit malesuada, eu dapibus sapien placerat. Sed non viverra magna, sit amet ornare erat. Fusce eros mi, consequat ac elit vel, ullamcorper molestie mauris. Proin auctor orci eget lacinia condimentum. Phasellus ultricies ligula id lacinia posuere. Nulla rutrum eros eu arcu tempor, imperdiet ornare lectus convallis. Nulla eleifend dapibus sem, vel viverra sapien.
         </p>
         <p>
-            Integer interdum ex augue, vel egestas nibh fermentum eu. Cras ut erat eu nisi ullamcorper scelerisque vitae in lorem. In hac habitasse platea dictumst. Pellentesque in ante aliquam, porta metus eu, viverra magna. Cras blandit, augue in consequat rhoncus, nulla risus sodales mi, at tincidunt dolor leo semper mauris. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Vivamus pellentesque purus porta maximus blandit. Suspendisse id lorem pellentesque, vehicula nulla at, congue eros. Duis eleifend semper sodales. Morbi eu sagittis ex. Praesent commodo rhoncus nisi. Aenean quis arcu mauris.
+            Integer interdum ex augue, vel egestas nibh fermentum eu. Cras ut erat eu nisi ullamcorper scelerisque vitae in lorem. In hac habitasse platea dictumst. Pellentesque ino semper mauris. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Vivamus pellentesque purus porta maximus blandit. Suspendisse id lorem pellentesque, vehicula nulla at, congue eros. Duis eleifend semper sodales. Morbi eu sagittis ex. Praesent commodo rhoncus nisi. Aenean quis arcu mauris.
         </p>
         <p>
             Donec eget ex ut nibh ullamcorper commodo. Aenean ac faucibus mi. Nullam luctus dui diam, in congue sem fringilla et. Vivamus non metus at elit ornare maximus. Nam iaculis ex in dolor rutrum, at facilisis dolor euismod. Sed lacinia sagittis lobortis. Suspendisse turpis tellus, pharetra scelerisque odio eget, condimentum tempus nibh. Praesent in diam ac sapien dignissim luctus a quis sapien. Duis sed lacus magna. Maecenas at fringilla quam. Ut purus risus, ultricies eget risus ut, convallis hendrerit eros. Fusce vehicula libero quam, nec cursus nulla interdum eu. Quisque commodo suscipit justo, id auctor metus varius rutrum.
         </p>
-        <p>
-            In tempus neque vitae magna congue, convallis blandit dolor mollis. Fusce rutrum in diam ac pretium. Vivamus sagittis, elit at cursus lacinia, mauris urna feugiat quam, et tincidunt nulla justo eget dui. Nullam malesuada felis quis dolor aliquam scelerisque. Maecenas porta, neque sit amet auctor bibendum, urna nibh porta enim, et auctor turpis ligula vel quam. In vulputate eu erat quis bibendum. Mauris vel felis luctus, ultricies nulla ac, euismod diam.
-        </p>
         <div class="row">
-            <div class="col-md-4">
+            <div class="col-md-3">
                 <p>
                     <button type="button" class="btn btn-block" data-toggle="modal" data-target="#modalLarge">
                         Large Demo Modal
                     </button>
                 </p>
             </div>
-            <div class="col-md-4">
+            <div class="col-md-3">
                 <p>
                     <button type="button" class="btn btn-block" data-toggle="modal" data-target="#modalSmall">
                         Small Demo Modal
                     </button>
                 </p>
             </div>
-            <div class="col-md-4">
+            <div class="col-md-3">
                 <p>
                     <button type="button" class="btn btn-block" data-toggle="modal" data-target="#modalTextButtons">
                         Modal With Text Buttons
+                    </button>
+                </p>
+            </div>
+            <div class="col-md-3">
+                <p>
+                    <button type="button" class="btn btn-block" data-toggle="modal" data-target="#modalFAButtons">
+                        Font Awesome Buttons
                     </button>
                 </p>
             </div>
@@ -149,18 +161,47 @@
                 </div>
             </div>
         </div>
+        <div class="modal fade modal-fullscreen" id="modalFAButtons" tabindex="-1" role="dialog" aria-labelledby="modalFAButtonsLabel">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <h4 class="modal-title" id="modalFAButtonsLabel">Font Awesome buttons</h4>
+                    </div>
+                    <div class="modal-body">
+                        <p>
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec sed dui tempor, finibus ligula vitae, convallis mi. Sed posuere at neque nec hendies dui eget, venenatis leo. Nunc hendrerit tellus non velit malesuada, eu dapibus sapre. Nulla rutrum eros eu arcu tempor, imperdiet ornare lectus convallis. Nulla eleifend dapibus sem, vel viverra sapien.
+                        </p>
+                        <p>
+                            Integer interdum ex augue, vel egestas nibh fermentum eu. Cras ut erat eu nisi ullamcorper scelerisque vitae in lorem. In hac habitasse platea dictumst. Pellentesque in ante aliquam, porta metus eu, viverra magna. Cras blandit, augue in consequat rhoncus, nulla risus sodales mi, at tincidunt dolor leo semper mauris. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Vivamus pellentesque purus porta maximus blandit. Suspendisse id lorem pellentesque, vehicula nulla at, congue eros. Duis eleifend semper sodales. Morbi eu sagittis ex. Praesent commodo rhoncus nisi. Aenean quis arcu mauris.
+                        </p>
+                        <p>
+                            Donec eget ex ut nibh ullamcorper commodo. Aenean ac faucibus mi. Nullam luctus dui diam, in congue sem fringilla et. Vivamus non metus at elit ornare maximus. Nam iaculis ex in dolor rutrum, at facilisis dolor euismod. Sed lacinia sagittis lobortis. Suspendisse turpis tellus, pharetra scelerisque odio eget, condimentum tempus nibh. Praesent in diam ac sapien dignissim luctus a quis sapien. Duis sed lacus magna. Maecenas at fringilla quam. Ut purus risus, ultricies eget risus ut, convallis hendrerit eros. Fusce vehicula libero quam, nec cursus nulla interdum eu. Quisque commodo suscipit justo, id auctor metus varius rutrum.
+                        </p>
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button>
+                        <button type="button" id="btnTestSettingsFAButtons" class="btn btn-default" data-faicon="fa-cog">Settings</button>
+                        <button type="button" id="btnTestSaveFAButtons" class="btn btn-default btn-primary" data-faicon="fa-floppy-o">Save</button>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
     <script src="dist/js/fs-modal.min.js"></script>
     <script>
     $(function() {
-        $('#btnTestSaveSmall, #btnTestSaveLarge, #btnTestSaveTextButtons').on('click', function() {
+        $('#btnTestSaveSmall, #btnTestSaveLarge, #btnTestSaveTextButtons, #btnTestSaveFAButtons').on('click', function() {
             alert('Clicked save button #' + this.id);
             $(this).parents('.modal').modal('hide');
         });
         $('#btnTestRefreshSmall, #btnTestRefreshTextButtons').on('click', function() {
             alert('Clicked refresh button #' + this.id);
+        });
+        $('#btnTestSettingsFAButtons').on('click', function() {
+            alert('Clicked settings button #' + this.id);
         });
     });
     </script>
