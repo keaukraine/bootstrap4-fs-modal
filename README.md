@@ -26,7 +26,8 @@ First, include CSS and JS from `dist` folder:
 
 Then, you have to add CSS class `modal-fullscreen` to modals which you want to work full-screen.
 
-For buttons to appear as icons, you will need to make a little modification of HTML. Plugin processes all buttons in footer except the ones with `data-dismiss="modal"` attribute (close button, which will be always added automatically), and adds them with or without icon depending on presence of `data-glyphicon` attribute. If this attribute is set, it will add button with glyphicon provided in this attribute. If `data-glyphicon` is not set or empty, it will place text button instead. Plugin will try to apply short text by looking for short button text in `data-mobile-text` attribute and falling back to button text if attribute is not set.
+Plugin can create either text or icon buttons.
+For buttons to appear as icons, you will need to make a little modification of HTML. Plugin processes all buttons in footer except the ones with `data-dismiss="modal"` attribute (close button, which will be always added automatically), and adds them either as text or as icon button. Icon for button can be either Glyphicon of Font Awesome icon and is set by `data-glyphicon` or `data-faicon` attribute. If one of these attributes is set, it will add button with provided icon. If icon attribute is not set or empty, it will create text button instead. Plugin will try to apply short text by looking for short button text in `data-mobile-text` attribute and falling back to button text if attribute is not set.
 
 Example:
 
@@ -35,12 +36,11 @@ Example:
 ...
 <div class="modal-footer">
   <button type="button" class="btn btn-default" data-dismiss="modal">Cancel</button> <!-- will be skipped -->
-  <button type="button" class="btn btn-default" data-glyphicon="glyphicon-refresh">Reload Data</button> <!-- icon button -->
-  <button type="button" class="btn btn-default btn-primary" data-glyphicon="glyphicon-ok">Save</button> <!-- icon button -->
+  <button type="button" class="btn btn-default" data-glyphicon="glyphicon-refresh">Reload Data</button> <!-- Glyphicon button -->
+  <button type="button" id="btnTestSettingsFAButtons" class="btn btn-default" data-faicon="fa-cog">Settings</button> <!-- Font Awesome icon button -->
   <button type="button" id="btnTestRefreshTextButtons" class="btn btn-default" data-mobile-text="Reload">Reload Data</button> <!-- text button with short text -->
   <button type="button" id="btnTestSaveTextButtons" class="btn btn-default btn-primary">Save</button> <!-- text button with default text -->
 </div>
-
 ```
 
 That's all you need. JS automatically tracks `show.bs.modal` events and duplicates all buttons to modal header, wiring `click` events to original buttons.
