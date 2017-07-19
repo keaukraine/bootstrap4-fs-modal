@@ -1,0 +1,14 @@
+.modal.modal-fullscreen {
+  box-shadow: 0px 0px 0px 100px white; }
+  .modal.modal-fullscreen .modal-dialog {
+    margin: 0;
+    height: 100%; }
+    .modal.modal-fullscreen .modal-dialog .modal-content {
+      border-style: none;
+      border-radius: 0;
+      height: 100%;
+      overflow: hidden; }
+    .modal.modal-fullscreen .modal-dialog .modal-body {
+      overflow: auto; }
+
+/*# sourceMappingURL=v4.css.map */

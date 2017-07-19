@@ -1,0 +1,21 @@
+.modal {
+    &.modal-fullscreen {
+        box-shadow: 0px 0px 0px 100px rgba(255, 255, 255, 1); // thick shadow to hide content during mobile Safari overscroll
+
+        .modal-dialog {
+            margin: 0;
+            height: 100%;
+
+            .modal-content {
+                border-style: none;
+                border-radius: 0;
+                height: 100%;
+                overflow: hidden;
+            }
+
+            .modal-body {
+                overflow: auto;
+            }
+        }
+    }
+}
