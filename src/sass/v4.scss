@@ -1,90 +1,95 @@
-.modal {
-    &.modal-fullscreen {
-        box-shadow: 0px 0px 0px 100px rgba(255, 255, 255, 1); // thick shadow to hide content during mobile Safari overscroll
+@import "../../node_modules/bootstrap/scss/functions";
+@import "../../node_modules/bootstrap/scss/variables";
+@import "../../node_modules/bootstrap/scss/mixins/breakpoints";
 
-        .modal-dialog {
-            margin: 0;
-            height: 100%;
+@include media-breakpoint-down(sm) {
+    .modal {
+        &.modal-fullscreen {
+            box-shadow: 0px 0px 0px 100px rgba(255, 255, 255, 1); // thick shadow to hide content during mobile Safari overscroll
 
-            .modal-content {
-                border-style: none;
-                border-radius: 0;
+            .modal-dialog {
+                margin: 0;
                 height: 100%;
+                max-width: 100%;
 
-                .modal-header {
-                    justify-content: flex-start;
-                    min-height: 50px;
-                    line-height: 50px;
-                    padding: 0;
-                    background-color: #f8f8f8;
+                .modal-content {
+                    border-style: none;
+                    border-radius: 0;
+                    height: 100%;
 
-                    .modal-title {
-                        white-space: nowrap;
+                    .modal-header {
+                        justify-content: flex-start;
+                        min-height: 50px;
                         line-height: 50px;
-                        font-size: 1.1rem;
+                        padding: 0;
+                        background-color: #f8f8f8;
+
+                        .modal-title {
+                            white-space: nowrap;
+                            line-height: 50px;
+                            font-size: 1.1rem;
+                        }
+
+                        .close {
+                            float: none;
+                            order: -1;
+                            margin: 0;
+                            padding: 0;
+                            height: 50px;
+                            color: transparent;
+                            opacity: 1;
+
+                            &:before {
+                                border-style: solid;
+                                border-color: $link-color;
+                                border-width: 0.15em 0.15em 0 0;
+                                content: '';
+                                display: inline-block;
+                                height: 0.5em;
+                                left: 0.55em;
+                                position: relative;
+                                top: 0.3em;
+                                transform: rotate(-45deg);
+                                vertical-align: top;
+                                width: 0.5em;
+                                transform: rotate(-135deg);
+                            }
+                        }
                     }
 
-                    .close {
-                        float: none;
-                        order: -1;
-                        margin: 0;
+                    .modal-footer {
+                        position: absolute;
+                        top: 0;
+                        right: 0;
                         padding: 0;
+                        margin: 0 10px 0 0;
                         height: 50px;
-                        color: transparent;
-                        opacity: 1;
+                        line-height: 50px;
+                        background-color: #f8f8f8;
 
-                        &:before {
-                            border-style: solid;
-                            border-color: blue;
-                            border-width: 0.15em 0.15em 0 0;
-                            content: '';
-                            display: inline-block;
-                            height: 0.5em;
-                            left: 0.55em;
-                            position: relative;
-                            top: 0.3em;
-                            transform: rotate(-45deg);
-                            vertical-align: top;
-                            width: 0.5em;
-                            transform: rotate(-135deg);
+                        .btn {
+                            border: none;
+                            background-color: transparent;
+                            margin: 0 0 0 10px;
+                            padding: 0;
+                            outline: none;
+                            box-shadow: none;
+                            font-size: 1.0rem;
+                            color: $link-color;
+
+                            &:hover, &:active {
+                                text-decoration: underline;
+                            }
+
+                            &[data-dismiss="modal"] {
+                                display: none;
+                            }
                         }
                     }
-                }
 
-                .modal-footer {
-                    position: absolute;
-                    top: 0;
-                    right: 0;
-                    padding: 0;
-                    margin: 0 10px 0 0;
-                    height: 50px;
-                    line-height: 50px;
-                    background-color: #f8f8f8;
-
-                    .btn {
-                        border: none;
-                        background-color: transparent;
-                        color: #000;
-                        margin: 0 0 0 10px;
-                        padding: 0;
-                        outline: none;
-                        box-shadow: none;
-                        font-size: 1.0rem;
-
-                        color: blue;
-
-                        &:hover, &:active {
-                            text-decoration: underline;
-                        }
-
-                        &[data-dismiss="modal"] {
-                            display: none;
-                        }
+                    .modal-body {
+                        overflow: auto;
                     }
-                }
-
-                .modal-body {
-                    overflow: auto;
                 }
             }
         }
