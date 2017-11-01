@@ -7,10 +7,9 @@
     "name": "Oleksandr Popov",
     "url": "github.com/keaukraine/"
   },
-  "repository" :
-  {
-    "type" : "git",
-    "url" : "https://github.com/keaukraine/bootstrap-fs-modal.git"
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/keaukraine/bootstrap-fs-modal.git"
   },
   "devDependencies": {},
   "dependencies": {

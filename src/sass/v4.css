@@ -6,9 +6,63 @@
     .modal.modal-fullscreen .modal-dialog .modal-content {
       border-style: none;
       border-radius: 0;
-      height: 100%;
-      overflow: hidden; }
-    .modal.modal-fullscreen .modal-dialog .modal-body {
-      overflow: auto; }
+      height: 100%; }
+      .modal.modal-fullscreen .modal-dialog .modal-content .modal-header {
+        justify-content: flex-start;
+        min-height: 50px;
+        line-height: 50px;
+        padding: 0;
+        background-color: #f8f8f8; }
+        .modal.modal-fullscreen .modal-dialog .modal-content .modal-header .modal-title {
+          white-space: nowrap;
+          line-height: 50px;
+          font-size: 1.1rem; }
+        .modal.modal-fullscreen .modal-dialog .modal-content .modal-header .close {
+          float: none;
+          order: -1;
+          margin: 0;
+          padding: 0;
+          height: 50px;
+          color: transparent;
+          opacity: 1; }
+          .modal.modal-fullscreen .modal-dialog .modal-content .modal-header .close:before {
+            border-style: solid;
+            border-color: blue;
+            border-width: 0.15em 0.15em 0 0;
+            content: '';
+            display: inline-block;
+            height: 0.5em;
+            left: 0.55em;
+            position: relative;
+            top: 0.3em;
+            transform: rotate(-45deg);
+            vertical-align: top;
+            width: 0.5em;
+            transform: rotate(-135deg); }
+      .modal.modal-fullscreen .modal-dialog .modal-content .modal-footer {
+        position: absolute;
+        top: 0;
+        right: 0;
+        padding: 0;
+        margin: 0 10px 0 0;
+        height: 50px;
+        line-height: 50px;
+        background-color: #f8f8f8; }
+        .modal.modal-fullscreen .modal-dialog .modal-content .modal-footer .btn {
+          border: none;
+          background-color: transparent;
+          color: #000;
+          margin: 0 0 0 10px;
+          padding: 0;
+          outline: none;
+          box-shadow: none;
+          font-size: 1.0rem;
+          color: blue; }
+          .modal.modal-fullscreen .modal-dialog .modal-content .modal-footer .btn:hover, .modal.modal-fullscreen .modal-dialog .modal-content .modal-footer .btn:active {
+            text-decoration: underline; }
+          .modal.modal-fullscreen .modal-dialog .modal-content .modal-footer .btn[data-dismiss="modal"] {
+            display: none; }
+      .modal.modal-fullscreen .modal-dialog .modal-content .modal-body {
+        overflow: auto; }
 
 /*# sourceMappingURL=v4.css.map */
