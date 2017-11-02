@@ -74,6 +74,13 @@
   .modal.modal-fullscreen .modal-dialog .modal-content .modal-footer .btn[data-dismiss="modal"] {
     display: none;
   }
+  .modal.modal-fullscreen .modal-dialog .modal-content .modal-footer .material-icons {
+    vertical-align: middle;
+  }
+  .modal.modal-fullscreen .modal-dialog .modal-content .modal-footer .fa {
+    vertical-align: middle;
+    font-size: 1.25em;
+  }
   .modal.modal-fullscreen .modal-dialog .modal-content .modal-body {
     overflow: auto;
   }
