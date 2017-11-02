@@ -1,7 +1,3 @@
-@import "../../node_modules/bootstrap/scss/functions";
-@import "../../node_modules/bootstrap/scss/variables";
-@import "../../node_modules/bootstrap/scss/mixins/breakpoints";
-
 @include media-breakpoint-down(sm) {
     .modal {
         &.modal-fullscreen {
@@ -19,14 +15,14 @@
 
                     .modal-header {
                         justify-content: flex-start;
-                        min-height: 50px;
-                        line-height: 50px;
+                        min-height: $modal-header-height;
+                        line-height: $modal-header-height;
                         padding: 0;
-                        background-color: #f8f8f8;
+                        background-color: $modal-header-background;
 
                         .modal-title {
                             white-space: nowrap;
-                            line-height: 50px;
+                            line-height: $modal-header-height;
                             font-size: 1.1rem;
                         }
 
@@ -35,7 +31,7 @@
                             order: -1;
                             margin: 0;
                             padding: 0;
-                            height: 50px;
+                            height: $modal-header-height;
                             color: transparent;
                             opacity: 1;
 
@@ -63,9 +59,9 @@
                         right: 0;
                         padding: 0;
                         margin: 0 10px 0 0;
-                        height: 50px;
-                        line-height: 50px;
-                        background-color: #f8f8f8;
+                        height: $modal-header-height;
+                        line-height: $modal-header-height;
+                        background-color: $modal-header-background;
 
                         .btn {
                             border: none;

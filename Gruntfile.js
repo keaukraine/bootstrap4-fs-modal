@@ -1,31 +1,26 @@
-module.exports = function(grunt) {
+module.exports = function (grunt) {
     grunt.initConfig({
-        less: {
-            development: {
+        sass: {
+            dist: {
+                options: {
+                    style: 'expanded'
+                },
                 files: {
-                    'dist/css/fs-modal.css': 'src/less/fs-modal.less'
+                    'dist/css/bootstrap-fs-modal.css': 'src/sass/bootstrap-fs-modal.scss'
                 }
             }
         },
         cssmin: {
             target: {
                 files: {
-                    'dist/css/fs-modal.min.css': ['dist/css/fs-modal.css']
+                    'dist/css/bootstrap-fs-modal.min.css': ['dist/css/bootstrap-fs-modal.css']
                 }
             }
-        },
-        uglify: {
-            my_target: {
-                files: {
-                    'dist/js/fs-modal.min.js': ['src/js/fs-modal.js'],
-                },
-            },
         }
     });
 
-    grunt.loadNpmTasks('grunt-contrib-less');
+    grunt.loadNpmTasks('grunt-contrib-sass');
     grunt.loadNpmTasks('grunt-contrib-cssmin');
-    grunt.loadNpmTasks('grunt-contrib-uglify');
 
-    grunt.registerTask('default', ['less', 'cssmin', 'uglify']);
+    grunt.registerTask('default', ['sass', 'cssmin']);
 };
