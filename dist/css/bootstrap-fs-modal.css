@@ -86,5 +86,14 @@
     overflow: auto;
   }
 }
+@media (min-width: 768px) {
+  .modal.modal-fullscreen .modal-dialog .modal-content {
+    max-height: calc(100vh - 60px);
+  }
+  .modal.modal-fullscreen .modal-dialog .modal-content .modal-body {
+    flex-shrink: 3;
+    overflow: auto;
+  }
+}
 
 /*# sourceMappingURL=bootstrap-fs-modal.css.map */

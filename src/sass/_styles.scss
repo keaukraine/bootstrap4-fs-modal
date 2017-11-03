@@ -101,3 +101,20 @@
         }
     }
 }
+
+@include media-breakpoint-up(md) {
+    .modal {
+        &.modal-fullscreen {
+            .modal-dialog {
+                .modal-content {
+                    max-height: calc(100vh - #{$modal-dialog-margin-y-sm-up * 2});
+
+                   .modal-body {
+                        flex-shrink: 3;
+                        overflow: auto;
+                    }
+                }
+            }
+        }
+    }
+}
