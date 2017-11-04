@@ -1,6 +1,6 @@
 @include media-breakpoint-down(sm) {
     .modal {
-        &.modal-fullscreen {
+        &.modal-fullscreen, .bootstrap-fs-modal & {
             box-shadow: 0px 0px 0px 100px rgba(255, 255, 255, 1); // thick shadow to hide content during mobile Safari overscroll
 
             .modal-dialog {
@@ -104,7 +104,7 @@
 
 @include media-breakpoint-up(md) {
     .modal {
-        &.modal-fullscreen {
+        &.modal-fullscreen, .bootstrap-fs-modal & {
             .modal-dialog {
                 .modal-content {
                     max-height: calc(100vh - #{$modal-dialog-margin-y-sm-up * 2});
