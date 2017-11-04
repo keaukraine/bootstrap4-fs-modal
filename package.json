@@ -1,5 +1,5 @@
 {
-  "name": "bootstrap-fs-modal",
+  "name": "bootstrap4-fs-modal",
   "version": "0.1.0",
   "license": "MIT",
   "description": "A simple way to improve Bootstrap 4 modals UX on mobile phones",
@@ -20,6 +20,7 @@
   "keywords": [
     "twitter",
     "bootstrap",
+    "bootstrap4",
     "modal",
     "responsive",
     "mobile",
