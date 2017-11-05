@@ -1,16 +1,16 @@
 # Bootstrap Mobile FullScreen Modal
-A simple way to improve UX of Bootstrap modals on mobile phones.
+A simple way to improve UX of Bootstrap 4 modals on mobile phones.
 
-Regular Bootstrap modals (with a lot of content) on mobile devices can cause additional scrolling to get to the bottom buttons of modal.
+Regular Bootstrap modals (with a lot of content) on mobile devices can cause additional vertical scrolling in order to get to the header and footer of modal.
 
 Fullscreen modal provides more native user experience on mobile phones, here is side-by-side comparison of regular and fullscreen modals:
 
-![Regular Bootstrap Modal on Phone](http://i.imgur.com/Calp2Rb.gif)
-![Fullscreen Bootstrap Modal on Phone](http://i.imgur.com/uIWVS1Q.gif)
+![Regular Bootstrap 4 Modal on Phone](https://i.imgur.com/cjo0RQN.gif)
+![Fullscreen Bootstrap 4 Modal on Phone](https://i.imgur.com/Hx0zp9w.gif)
 
-Fullscreen modal does not affect modals in large viewports, and applies these styles only on mobile devices.
+Fullscreen modal applies these styles only on mobile devices. It also applies max-height to modals on devices with large screens to prevent scrolling of page to reach buttons in modal footer.
 
-Live demo page is here - https://keaukraine.github.io/bootstrap-fs-modal/
+Live demo page is here - https://keaukraine.github.io/bootstrap4-fs-modal/
 
 ## How to Use
 
