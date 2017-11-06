@@ -95,6 +95,7 @@
 
                     .modal-body {
                         overflow: auto;
+                        -webkit-overflow-scrolling: touch;
                     }
                 }
             }
@@ -112,6 +113,7 @@
                    .modal-body {
                         flex-shrink: 3;
                         overflow: auto;
+                        -webkit-overflow-scrolling: touch
                     }
                 }
             }
