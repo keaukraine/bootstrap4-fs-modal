@@ -42,6 +42,29 @@ Examples:
 </body>
 ```
 
+Plugin places `.modal-footer` at the top of modal and modifies styles of all elements with `.button` class to look like link buttons. Buttons with `data-dismiss="modal"` (used to close modal) will be automatically hidden.
+
+You can use Bootstrap 4 responsive classes to show short text or icons for `xs` and `sm` breakpoints.
+Fullscreen modal styles include rules for *Font Awesome* and *Google Material* icons to have the same size and alignment.
+
+```html
+<div class="modal-footer">
+    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>  <!-- this button will be hidden -->
+    <button type="button" id="btnTestRefreshSmall" class="btn btn-default">
+        <span class="d-none d-md-inline">Reload Data</span>
+        <span class="d-md-none">Reload</span> <!-- will have short text -->
+    </button>
+    <button type="button"class="btn btn-default">
+        <span class="d-none d-md-inline">Reload Data</span>
+        <i class="d-md-none fa fa-refresh fa-fw"></i> <!-- this will have FA icon -->
+    </button>
+    <button type="button"class="btn btn-default">
+        <span class="d-none d-md-inline">Details</span>
+        <i class="d-md-none material-icons">info</i> <!-- will have Material icon -->
+    </button>
+</div>
+```
+
 ## Used Libraries
 * Twitter Bootstrap used under the MIT License https://github.com/twbs/bootstrap/blob/master/LICENSE
 
