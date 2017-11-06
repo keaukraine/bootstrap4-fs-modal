@@ -42,7 +42,7 @@ Examples:
 </body>
 ```
 
-Plugin places `.modal-footer` at the top of modal and modifies styles of all footer children with `.button` class to look like link buttons. Buttons with `data-dismiss="modal"` (used to close modal) will be automatically hidden.
+Plugin places `.modal-footer` at the top of modal and modifies styles of all footer children with `.button` class to look like link buttons. Buttons with `[data-dismiss="modal"]` (used to close modal) will be automatically hidden.
 
 You can use Bootstrap 4 responsive classes to show short text or icons in footer buttons for `xs` and `sm` breakpoints.
 Fullscreen modal styles include rules for *Font Awesome* and *Google Material* icons for them to have uniform size and alignment.
