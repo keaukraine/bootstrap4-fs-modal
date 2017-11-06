@@ -84,6 +84,7 @@
   }
   .modal.modal-fullscreen .modal-dialog .modal-content .modal-body, .bootstrap-fs-modal .modal .modal-dialog .modal-content .modal-body {
     overflow: auto;
+    -webkit-overflow-scrolling: touch;
   }
 }
 @media (min-width: 768px) {
@@ -93,6 +94,7 @@
   .modal.modal-fullscreen .modal-dialog .modal-content .modal-body, .bootstrap-fs-modal .modal .modal-dialog .modal-content .modal-body {
     flex-shrink: 3;
     overflow: auto;
+    -webkit-overflow-scrolling: touch;
   }
 }
 
