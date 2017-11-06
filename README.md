@@ -1,5 +1,5 @@
 # Bootstrap Mobile FullScreen Modal
-A simple way to improve UX of Bootstrap 4 modals on mobile phones.
+A simple, CSS-only solution to improve UX of Bootstrap 4 modals on mobile phones.
 
 Regular Bootstrap modals (with a lot of content) on mobile devices can cause additional vertical scrolling in order to get to the header and footer of modal.
 
