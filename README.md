@@ -26,7 +26,9 @@ Then, you have two options to make modals use updated styles:
  * add `modal-fullscreen` CSS class to modals which you want to work full-screen.
  * add `bootstrap-fs-modal` CSS class to container element for all modals within this element to receive updated styles.
 
-Examples:
+If your modals have large text buttons you may want to use a fixed bottom modal footer instead of placing buttons in header. In this case you should add `modal-fullscreen-bottom-footer` class either to modal or to container.
+
+Examples (for detailed examples please see source code of demo page *index.html*):
 
 ```html
   <div class="modal fade modal-fullscreen" ...>
