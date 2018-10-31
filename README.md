@@ -3,7 +3,7 @@ A simple, CSS-only solution to improve UX of Bootstrap 4 modals on mobile phones
 
 Regular Bootstrap modals (with a lot of content) on mobile devices can cause additional vertical scrolling in order to get to the header and footer of modal.
 
-Fullscreen modal provides more native user experience on mobile phones, here is side-by-side comparison of regular and fullscreen modals:
+Fullscreen modal provides more native user experience on mobile phones, with responsive behavior similar to modals in ZURB Foundation. Here is side-by-side comparison of regular and fullscreen modals:
 
 ![Regular Bootstrap 4 Modal on Phone](https://i.imgur.com/cjo0RQN.gif)
 ![Fullscreen Bootstrap 4 Modal on Phone](https://i.imgur.com/Hx0zp9w.gif)
